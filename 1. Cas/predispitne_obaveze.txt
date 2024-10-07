@@ -1,0 +1,32 @@
+PREDISPITNE OBAVEZA
+
+1) projekat - pravite staticki web sajt po uzoru na sajt koji dobijete
+    odbrana - I kolokvijumske nedelje 
+    20 poena
+    HTML CSS
+
+2) projekat - responsive design za 1. projekat 
+    nadovezuje se na 1. 
+    ako ne uradite prvi projekat, ne mozete da uradite 2.
+    20 poena
+    odbrana - ili pred II kolokvijumsku nedelju ili tokom nje
+    CSS
+
+3) projekat - CRUD aplikacije koristeci JavaScript i localstorage
+    30 poena
+    odbrana - II kolokvijumske nedelje 
+
+20 + 20 + 30 = 70
+----------------------------------------------------------------------------
+Uslovi
+
+morate imati 35 od 70 -> pola poena
+na svakom projektu morate imati makar 1 poen
+
+----------------------------------------------------------------------------
+ispit 
+
+teorijski - pitanja na zaokruzivanje 
+negativne poene, +2 0 -1 
+ispit nosi 30 poena 
+morate na ispitu imati preko 15 poena

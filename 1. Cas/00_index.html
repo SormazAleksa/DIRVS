@@ -1,0 +1,156 @@
+
+<!-- 
+
+    CTRL + / -> ZA DODAVANJE I UKLANJANJE KOMENTARA
+
+    .html -> ekstenzija za html fajlove
+
+    html -> Hypertext Markup Language -> Markup Language -> pisete i organizujete simbole tako da oni dobiju odredjenu strukturu
+    css -> Cascading Style Sheet -> jezik koji se koristi za stilizovanje web stranica
+    JavaScript -> programski jezik koji se koristi za pravljenje dinamickih web stranica
+
+    web stranice
+
+    1) frontend -> predstavlja na sajtu sve ono sto korisnik moze da vidi i da koristi -> html, css, js
+
+    2) backend -> logika iza samog sajta, WSIT (Flask python web framework)
+
+    ---------------------------------------------------------
+
+    html -> prvi  i osnovi tag u html fajlovima u kojima se nalazi sve sto ide na stranicu
+
+    otvoreni deo     zatvoreni deo
+    <naziv_taga>     </naziv_taga>
+
+    <html> <html>
+
+    html tag ce imati 2 podele 
+
+    - zaglavlje -> head -> <head></head>
+    - telo stranice -> body -> <body></body>
+
+
+    body sekcija -> u njoj se nalazi sadrzaj cele stranice i to je ono sto korisnik moze da vidi
+
+    u ovu sekciju mozemo dodati tekstove, slike, linkove, forme ....
+
+    ------------------------------------------------
+    tagovi za tekst 
+
+    heading tagovi -> naziv za heading tagove je h
+    oni imaju boldovan tekst i najcesce se koriste za naslove
+
+    h1...h6
+    h1
+    h2
+    h3
+    h6
+
+    h1 -> heading tag sa najvecim font size-om, velicina slova najveca
+    h6 -> heading tag sa najmanjim font size-om, najmanjom velicinom slova
+
+    paragraph -> p tag
+
+    <p></p>
+
+
+-->
+
+<html>
+    <head>
+        <!-- title -> <title></title> -->
+        <!-- u okviru title taga ide naslov koji se zatim prikazuje na tabu browsera -->
+
+        <title>Ovo je tekst u title tagu</title>
+        <title>Ovo je drugi naslov</title> 
+        <!-- bez obzira koliko title tagova napisemo, uzimamo se samo onaj prvi napisani -->
+    </head>
+
+    <body>
+
+        <a href="00_index.html">Prva stranica</a> <br>
+        <a href="01_atributi.html">Druga stranica</a> <br>
+        <a href="https://raf.edu.rs/" target="_blank">Racunarski fakultet</a>
+        <br>
+        <br>
+
+        <h1>Racunarski fakultet</h1>
+
+        <!-- ako zelim da sacuvam izmene u okviru fajla onda mogu da koristim -> CTRL + S -->
+        <h2>Racunarski fakultet</h2>
+        <h3>Racunarski fakultet</h3>
+        <h4>Racunarski fakultet</h4>
+        <h5>Racunarski fakultet</h5>
+        <h6>Racunarski fakultet</h6>
+
+        <!-- lorem + neki broj -> dobijete tekst od tog broja reci -->
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem aliquam non sunt vitae repellat consequatur ab numquam molestias quidem totam!</p>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam suscipit reiciendis iure est praesentium fugiat voluptatum fugit maiores asperiores mollitia nemo cupiditate doloribus libero provident nisi nesciunt explicabo, molestias optio sed quaerat. Ducimus, aspernatur, veritatis voluptatem quos, quam incidunt autem officia placeat doloremque cum omnis quo rerum in ipsum reiciendis cumque. Maxime facere voluptatem ipsum quasi deserunt dolore blanditiis fuga ut hic repellendus est architecto nihil cumque, neque commodi sequi nobis enim ab. Harum excepturi distinctio nisi assumenda ipsum voluptate amet incidunt itaque earum reprehenderit expedita praesentium fugiat ratione, aperiam dicta quaerat dignissimos deserunt voluptates illo provident, tempora eius! Dolor.</p>
+
+        <!-- html -> ne prepoznaje beline -->
+         <!-- ako pokusate da kucate vise space-ova, razmaka, ili tab ili novi red -> ovo ne radi -->
+
+         <!-- &nbsp; -> omogucava da dobijemo jedan dodatni razmak -->
+
+        Lorem &nbsp;&nbsp;&nbsp;&nbsp;ipsum dolor sit amet consectetur adipisicing elit. Illum ullam similique deleniti vero sint ipsa rem enim, iste minus error.    <br><br><br><br><br><br><br><br><br><br>
+
+        <!-- break tag -> br -> ovaj tag se ne zatvara 
+            hr -> horizontal line 
+            img -> koristi se za slike
+
+        -->
+
+
+
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident expedita animi nemo quis officiis eos reprehenderit, quisquam voluptatum quod recusandae.
+
+        <!-- ako zelimo da tekst bude iskosen, mozemo da koristimo tag
+            i -> italic -> iskoseni tekst 
+            b -> bold -> boldovan/zadebljani tekst
+            u -> underline -> podvuceni tekst
+
+            strong -> radi vizuelno isto sto i b tag, ali je razlika u tome da strong takodje ima funkciju da naglasi neku rec (SEO)
+            em -> radi vizuelno isto sto i <i> tag, ali je razlika u tome da em ima funkciju da naglasi neku rec
+        -->
+
+        <p>
+            <i>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet quis nobis, fugit doloribus consequuntur repellat ut qui labore? Magni, tempora.
+            </i>
+        </p>
+
+        <p>
+            <b>
+                Ovo je boldovani tekst
+            </b>
+        </p>
+
+        <p>
+            <u>Ovo je podvuceni tekst</u>
+        </p>
+
+        <p>
+            <strong>Ovo je strong tekst</strong>
+        </p>
+
+        <p>
+            <em>Ovo je em tekst</em>
+        </p>
+
+        <p>
+            123<sub>45</sub>213<sup>567</sup>
+        </p>
+
+        <p>
+            H<sub>2</sub>O
+        </p>
+
+        <p>
+            X<sup>2</sup>
+        </p>
+
+    </body>
+
+</html>
