@@ -1,0 +1,103 @@
+<!-- 
+ 
+    html -> hypertext markup language
+    -> uz pomoc njega mozemo da dodajemo neke elemente na stranici
+    tekstovi, slike, linkovi, forme
+
+    --------------------------------------
+    <html>
+
+    imamo podelu na 2 sekcije
+
+    zaglavlje stranice -> head -> ovde se nalaze razne informacije i sadrzaji koji mogu da opisuju samu stranu (ko je autor, nesto vise o autori, nesto vise o stranici, kratak opis) 
+    sadrzaj zaglavlja se obicno ne vidi na strani
+
+    <title> -> predstavlja naslov u tabu browsera
+
+    telo stranice -> body -> u okviru ove sekcije ide sadrzaj koji se prikazuje korisniku na stranici
+    tekstualni, slike, linkove, liste itd 
+
+    tekstualnih tagova 
+    heading tagove -> h
+    h1...h6 
+    h1 -> najveci h tag
+    h6 -> najmanji h tag
+
+    p -> paragraf -> on se obicno koristi za pisanje duzih tekstova, sam tekst je obican, nema stilizovanje i normalne je velicine
+
+
+-->
+
+<html>
+    <head>
+        <title>Ovo je podsetnik prve nedelje</title>
+        <link rel="icon" type="image/x-icon" href="images/raf.png">
+    </head>
+    <body>
+        
+        <a href="">Ovo je primer linka</a>
+
+        <h1>Ovo je h1 tag</h1>
+        <h2>Ovo je h2 tag</h2>
+        <h3>Ovo je h3 tag </h3>
+        <h4>Ovo je h4 tag</h4>
+        <h5>Ovo je h5 tag</h5>
+        <h6>Ovo je h6 tag</h6>
+
+        <hr>
+
+        <p>
+            <!-- br -> break -> html ne prepoznaje beline (tabovi, vise od jednog razmaka, novi redovi), break tag se koristi za prelazak u novi red-->
+            <!-- &nbsp; -> jedan ovaj simbol oznacava jedan razmak -->
+            Lorem ipsum dolor sit, <br><br><br> amet consectetur adipisicing elit. Dicta, numquam eligendi, &nbsp;&nbsp;&nbsp;&nbsp; deserunt quasi, eum beatae non in esse cupiditate odio illum. Voluptate adipisci reprehenderit ad sunt labore tenetur aliquid nam.
+        </p>
+
+        <hr> 
+        <!-- hr -> horizontal line -> horizontalna linija -->
+
+        <!-- stilizovanje teksta -->
+         
+        <p>
+            <i>
+                ovo je iskoseni tekst
+            </i>
+        </p>
+
+        <p>
+            <u>
+                Ovo je podvuceni tekst
+            </u>
+        </p>
+
+        <p>
+            <b>
+                ovo je boldovani tekst
+            </b>
+        </p>
+
+        <p>
+            <b>
+                <u>
+                    <i>
+                        Ovo je tekst sa previse stilizovanja
+                    </i>
+                </u>
+            </b>
+        </p>
+
+        <p>
+            H<sub>2</sub>0
+        </p>
+
+        <p>
+            x<sup>2</sup>
+        </p>
+
+        <p>
+            <center>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, iste? Reiciendis eligendi esse suscipit voluptatum vitae molestiae culpa, eius rerum.
+            </center>
+        </p>
+
+    </body>
+</html>

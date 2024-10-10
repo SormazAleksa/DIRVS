@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forme</title>
+</head>
+<body>
+
+    <!-- login, register -> forme
+        google forms 
+
+        forme su nacin da komuniciramo sa korisnikom i da pokupimo neke podatke od njega
+    
+        <form> 
+            
+            ovde idu polja za unos podataka koje korisnik moze da popuni
+
+        </form
+
+        atribut action predstavlja gde ce zavrsiti podaci koje korisnik popuni
+
+        method -> atribut koji oznacava koji ce biti http request method za formu
+
+        GET -> vi posaljete zahtev za stranicu, kao rezultat dobijete html odgovor, stranicu
+        cesto se koristi kada imamo neku vrstu filtera, i onda se ti podaci dobijeni iz forme nalaze u okviru url adrese sajta/stranice
+        POST
+        PUT
+        PATCH
+        DELETE
+    -->
+    
+    <!-- podrazumevani method je get ako ne napisemo nista -->
+     <!-- ako koristimo post method, ne vidimo direktno na sajtu podatke vec njima mozemo da pristupimo preko nekog backend programskog jezika -> flask(python), php, laravel -->
+    <form action="05_ovde_zavrsite_nakon_popunjene_forme.html" method="post">
+        <!-- label -> element koji stoji iz input element/input polje i bolje ga opisuje -->
+        <!-- input -> predstavlja element u koji korisnik moze da unese ili da sacuva neki podatak -->
+        <!-- input on moze imati atribut type koji ima sledece vrednosti
+         u zavisnosti od podatka koji ocekujemo da korisnik unese, koristimo odredjeni tip input type
+        
+            text
+            email
+            password
+            file
+            date
+            time
+            checkbox
+            radio
+            range
+
+        name atribut za input polje cemo cesto koristiti na predmetu WSIT -> moj savet je da uvek kada kucate input imate i name pored njega
+        i label i input su inline elementi -> nalaze se u jednom redu ako za to ima mesta
+        stoje zajedno
+        
+        -->
+
+        <p>
+            <label>Unesite username</label>
+            <input type="text">
+        </p>
+
+        <p>
+            <label for="">Unesite email</label>
+            <input type="email" name="unet_email" placeholder="john@example.com" id=""> john@example.com
+        </p>
+
+        <p>
+            <label for="">Unesite datum leta</label>
+            <input type="date" name="datum_leta" id="">
+        </p>
+
+        <p>
+            <label for="">Unesite vreme leta</label>
+            <input type="time" name="vreme_leta" id="">
+        </p>
+
+        <p>
+            <label for="">Unesite CV</label>
+            <input type="file" name="uneti_fajl" id="">
+        </p>
+
+        <p>
+            <label for="">Izaberite boju</label>
+            <input type="color" name="izabrana_boja" id="">
+        </p>
+
+        <p>
+            <label for="">Unesite sifru</label>
+            <input type="password" name="uneta_sifra" id="">
+        </p>
+
+        <p>
+            <label for="">Izaberite hobi</label>
+            <input type="checkbox" name="hobi" value="fudbal" id="">Fudbal
+            <input type="checkbox" name="hobi" value="odbojka" id="">Odbojka
+            <input type="checkbox" name="hobi" value="kosarka" id="">Kosarka
+        </p>
+
+        <p>
+            <label for="">Izaberite pol</label>
+            <!-- da bi korisnik mogao da izabere samo jedan radio button onda je bitno da njihov naziv/name bude isti -->
+            <input type="radio" name="pol"  id="">Muski
+            <input type="radio" name="pol" checked id="">Zenski
+        </p>
+
+        <p>
+            <label for="">Izaberite vrednost</label>
+            0<input type="range" name="izabrana_vrednost" min="0" max="100" id="">100
+        </p>
+
+        <!-- input type="submit" sluzi za predaju forme -->
+        <p>
+            <input type="submit" value="Predaj formu">
+            <input type="reset" value="Resetujte formu">
+        </p>
+
+        <!-- 
+        ?
+        unet_email=pperic%40raf.rs
+        &
+        datum_leta=2024-10-23
+        &
+        vreme_leta=21%3A38
+        &
+        uneti_fajl=03_liste.html
+        &
+        izabrana_boja=%23000000&uneta_sifra=1234&hobi=fudbal&hobi=odbojka&pol=on&izabrana_vrednost=84 -->
+
+    </form>
+
+</body>
+</html>

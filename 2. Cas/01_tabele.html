@@ -1,0 +1,70 @@
+
+<!-- 
+
+tabele -> koriste se prikaz vise podataka 
+studente -> ime, prezime, prosek -> preko tabele
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabele</title>
+</head>
+<body>
+
+    <!-- da bismo zapoceli tabelu u htmlu moramo da koristimo <table></table> -->
+
+    <!-- da bismo dodali ivice u okviru otvoreno table taga mozemo da dodamo atribut -> border="1" -->
+
+    <!-- da bismo uklonili duple ivice mozemo da korsitimo sledece -->
+    <!-- style="border-collapse: collapse" -->
+    <table border="1" style="border-collapse: collapse;">
+        <!-- tabela moze imati 2 sekcije 
+            
+        zaglavlje -> thead -> ovde obicno ide opis stas e nalazi u kojoj koloni
+        
+        "telo tabele" -> tbody -> ovde idu podaci same tabele
+        
+        -->
+        <thead>
+            <!-- red u tabeli mozem oda napravimo koristeci tag tr -> table row  -->
+            <tr>
+                <!-- u okviru jednog reda polja mozemo da pravimo ili preko td taga ili preko th taga -->
+                <!-- th -> table heading -> slicno kao h tagovi, tekst je centriran u okviru polja, boldovan -->
+                <!-- td -> on se najcesce koristi za prikaz podataka, on je obican tekst koji nije centriran, ide uz levu ivicu polja -->
+                <th>Ime</th>
+                <th>Prezime</th>
+                <th>Prosek</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2">Pera Peric</td>
+                <td>8.33</td>
+                <!-- rowspan -> odredjuje koliko ce redova da zauzima odredjeno polje
+                    <td rowspan="2">
+                 
+                    colspan -> odredjuje koliko ce kolona da zauzima odredjeno polje 
+                    <td colspan="3">
+                -->
+            </tr>
+            <!-- svaki novi podatak treba da se nalazi u novom redu, tj u novom tr tagu -->
+            <tr>
+                <td rowspan="3" colspan="2">Mika Mikic</td>
+                <td>8.88</td>
+            </tr>
+            <tr>
+                <td>9.1</td>
+            </tr>
+            <tr>
+                <td>9.12</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+</body>
+</html>
