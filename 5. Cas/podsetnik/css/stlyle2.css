@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* font-family: 'Roboto', sans-serif; */
+    background-color: #f5f5f5;
+}
+
+div {
+    border: 1px solid #000;
+
+}
+
+.container {
+    margin: 0 auto;
+    width: 60%;
+
+
+}
+
+.header,
+.footer {
+    height: 150px;
+    line-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    background-color: brown;
+    color: white;
+    font-weight: 900;
+}
+
+.header {
+    background-color: cyan;
+}
+
+.footer {
+    background-color: brown;
+}
+
+.main {
+    /* height: 500px; */
+    background-color: gray;
+    padding: 1em;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* red   kolona */
+    gap: 2em 0em;
+}
+
+
+.proizvod {
+    width: 30%;
+    text-align: center;
+    background-color: lightgray;
+}
+
+.proizvod img {
+    width: 70%;
+    border-radius: 10px;
+}
+
+.cene {
+    margin-top: 1em;
+    display: flex;
+}
+
+.nova, .stara {
+    width: 50%;
+    height: 2.5em;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    font-size: 1.3em;
+}
+
+.nova {
+    background-color: lightgreen;
+}
+
+.stara {
+    background-color: red;
+    text-decoration: line-through;
+}
+
